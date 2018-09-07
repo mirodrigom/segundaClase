@@ -45,9 +45,12 @@ public class Controller implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        this.modelo.setN1(Double.parseDouble(vista.edtn1.getText());
+        this.modelo.setN2(String.valueOf(vista.edtn2.getText()));
         switch (v.getId())
         {
             case R.id.suma:
+
                 vista.resultado.setText(String.valueOf(this.Operacion("Sumar",this.modelo)));
                 break;
             case R.id.resta:
